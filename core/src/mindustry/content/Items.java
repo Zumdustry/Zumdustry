@@ -8,7 +8,12 @@ public class Items{
     public static Item
     scrap, copper, lead, graphite, coal, titanium, thorium, silicon, plastanium,
     phaseFabric, surgeAlloy, sporePod, sand, blastCompound, pyratite, metaglass,
-    beryllium, tungsten, oxide, carbide, fissileMatter, dormantCyst;
+    beryllium, tungsten, oxide, carbide, fissileMatter, dormantCyst,
+
+    // Zumdustry resources
+
+    stone
+    ;
 
     //TODO remove, these are for debugging only
     public static final Seq<Item> serpuloItems = new Seq<>(), erekirItems = new Seq<>(), erekirOnlyItems = new Seq<>();
@@ -153,6 +158,10 @@ public class Items{
         }};
 
         // Zumdustry items
+
+        stone = new Item("stone", Color.valueOf("5e5e5e")){{
+            cost = 1.0f;
+        }};
 
         serpuloItems.addAll(
         scrap, copper, lead, graphite, coal, titanium, thorium, silicon, plastanium,
