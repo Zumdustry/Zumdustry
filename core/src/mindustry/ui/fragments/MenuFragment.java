@@ -169,8 +169,8 @@ public class MenuFragment{
 
             buttons(t,
                 new Buttoni("@play", Icon.play,
-                    new Buttoni("@campaign", Icon.play, () -> checkPlay(ui.planet::show)),
-                    new Buttoni("@joingame", Icon.add, () -> checkPlay(ui.join::show)),
+                    // new Buttoni("@campaign", Icon.play, () -> checkPlay(ui.planet::show)),
+                    // new Buttoni("@joingame", Icon.add, () -> checkPlay(ui.join::show)),
                     new Buttoni("@customgame", Icon.terrain, () -> checkPlay(ui.custom::show)),
                     new Buttoni("@loadgame", Icon.download, () -> checkPlay(ui.load::show))
                 ),
@@ -180,7 +180,7 @@ public class MenuFragment{
                     new Buttoni("@about.button", Icon.info, ui.about::show)
                 ),
                 new Buttoni("@editor", Icon.terrain, () -> checkPlay(ui.maps::show)), steam ? new Buttoni("@workshop", Icon.steam, platform::openWorkshop) : null,
-                new Buttoni("@mods", Icon.book, ui.mods::show),
+                // new Buttoni("@mods", Icon.book, ui.mods::show),
                 new Buttoni("@settings", Icon.settings, ui.settings::show),
                 new Buttoni("@quit", Icon.exit, Core.app::exit)
             );
