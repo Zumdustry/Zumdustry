@@ -395,15 +395,7 @@ public abstract class InputHandler implements InputProcessor, GestureListener{
 
     @Remote(targets = Loc.client, called = Loc.server)
     public static void dropItem(Player player, float angle){
-        if(player == null) return;
-
-        if(net.server() && player.unit().stack.amount <= 0){
-            throw new ValidateException(player, "Player cannot drop an item.");
-        }
-
-        var unit = player.unit();
-        Fx.dropItem.at(unit.x, unit.y, angle, Color.white, unit.item());
-        unit.clearItem();
+        return;
     }
 
     @Remote(targets = Loc.both, called = Loc.server, forward = true, unreliable = true)
