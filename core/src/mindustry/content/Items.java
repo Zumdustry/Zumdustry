@@ -36,7 +36,7 @@ public class Items{
             hidden = true;
         }};
 
-        graphite = new Item("graphite", Color.valueOf("95abd9")){{
+        graphite = new Item("graphite", Color.valueOf("b2c6d2")){{
             cost = 1f;
             hidden = true;
         }};
